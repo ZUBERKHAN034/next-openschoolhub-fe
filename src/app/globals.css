@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.react-calendar{
+  width: 100% !important;
+  border: none !important;
+  font-family: "Inter", sans-serif !important;
+}
+
+.react-calendar__navigation__label__labelText{
+  font-weight: 600;
+}
+
+.react-calendar__month-view__days__day--weekend {
+    color: #ff7979 !important;
+} 
+
+.react-calendar__month-view__days__day--neighboringMonth, .react-calendar__decade-view__years__year--neighboringDecade, .react-calendar__century-view__decades__decade--neighboringCentury {
+    color: #757575 !important;
+}
+
+.react-calendar__tile--active{
+  background-color: #C3EBFA !important;
+  color: black !important;
+}
+
+.react-calendar__tile--now {
+    background: #FAE27C !important;
+}
+
+/* When both now and active are present on same tile - purple */
+.react-calendar__tile--now.react-calendar__tile--active {
+  background: #CFCEFF !important;
+}
